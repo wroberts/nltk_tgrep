@@ -4,7 +4,7 @@
 
 TGrep search implementation for NTLK trees.
 
-(c) 16 March, 2013 Will Roberts <wildwilhelm@gmail.com>.
+Copyright (c) 16 March, 2013 Will Roberts <wildwilhelm@gmail.com>.
 
 Licensed under the MIT License (see source file tgrep.py for details).
 
