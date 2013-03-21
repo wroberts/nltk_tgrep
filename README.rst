@@ -45,6 +45,23 @@ Usage:
     [ParentedTree('NN', ['dog']), ParentedTree('NN', ['cat'])]
     >>> tgrep.tgrep_positions(tree, 'NN')
     [(0, 2), (2, 1)]
+    >>> tgrep.tgrep_nodes(tree, 'DT')
+    [ParentedTree('DT', ['the']), ParentedTree('DT', ['a'])]
+    >>> tgrep.tgrep_nodes(tree, 'DT $ JJ')
+    [ParentedTree('DT', ['the'])]
+
+This implementation adds syntax to select nodes based on their NLTK
+tree position.  This syntax is ``N`` plus a Python tuple representing
+the tree position.  For instance, ``N()``, ``N(0,)``, ``N(0,0)`` are
+valid node selectors.  Example::
+
+    >>> tree = ParentedTree('(S (NP (DT the) (JJ big) (NN dog)) (VP bit) (NP (DT a) (NN cat)))')
+    >>> tree[0,0]
+    ParentedTree('DT', ['the'])
+    >>> tree[0,0].treeposition()
+    (0, 0)
+    >>> tgrep.tgrep_nodes(tree, 'N(0,0)')
+    [ParentedTree('DT', ['the'])]
 
 Caveats:
 --------
