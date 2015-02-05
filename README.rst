@@ -40,7 +40,7 @@ Usage:
 
     >>> from nltk.tree import ParentedTree
     >>> import tgrep
-    >>> tree = ParentedTree('(S (NP (DT the) (JJ big) (NN dog)) (VP bit) (NP (DT a) (NN cat)))')
+    >>> tree = ParentedTree.fromstring('(S (NP (DT the) (JJ big) (NN dog)) (VP bit) (NP (DT a) (NN cat)))')
     >>> tgrep.tgrep_nodes(tree, 'NN')
     [ParentedTree('NN', ['dog']), ParentedTree('NN', ['cat'])]
     >>> tgrep.tgrep_positions(tree, 'NN')
