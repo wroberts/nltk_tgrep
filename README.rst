@@ -55,7 +55,7 @@ tree position.  This syntax is ``N`` plus a Python tuple representing
 the tree position.  For instance, ``N()``, ``N(0,)``, ``N(0,0)`` are
 valid node selectors.  Example::
 
-    >>> tree = ParentedTree('(S (NP (DT the) (JJ big) (NN dog)) (VP bit) (NP (DT a) (NN cat)))')
+    >>> tree = ParentedTree.fromstring('(S (NP (DT the) (JJ big) (NN dog)) (VP bit) (NP (DT a) (NN cat)))')
     >>> tree[0,0]
     ParentedTree('DT', ['the'])
     >>> tree[0,0].treeposition()
