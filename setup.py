@@ -11,6 +11,7 @@ setuptools install of nltk_tgrep
 from setuptools import setup, find_packages  # Always prefer setuptools over distutils
 from codecs import open  # To use a consistent encoding
 from os import path
+import sys
 
 HERE = path.abspath(path.dirname(__file__))
 
@@ -20,6 +21,11 @@ with open(path.join(HERE, 'nltk_tgrep', 'VERSION'), encoding='utf-8') as f:
 # Get the long description from the relevant file
 with open(path.join(HERE, 'README.rst'), encoding='utf-8') as f:
     LONG_DESCRIPTION = f.read()
+
+# http://stackoverflow.com/a/19719657/1062499
+INSTALL_REQUIRES = ['nltk >= 3.0.0', 'pyparsing']
+if sys.version_info.major < 3:
+    INSTALL_REQUIRES.append('future')
 
 setup(
     name='nltk_tgrep',
@@ -77,7 +83,7 @@ setup(
     # project is installed. For an analysis of "install_requires" vs pip's
     # requirements files see:
     # https://packaging.python.org/en/latest/requirements.html
-    install_requires=['nltk >= 3.0.0', 'pyparsing'],
+    install_requires=INSTALL_REQUIRES,
 
     # List additional groups of dependencies here (e.g. development dependencies).
     # You can install these using the following syntax, for example:
