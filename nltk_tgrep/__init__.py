@@ -7,6 +7,7 @@ TGrep search implementation for NTLK trees.
 (c) 16 March, 2013 Will Roberts <wildwilhelm@gmail.com>.
 '''
 
+from __future__ import absolute_import
 from codecs import open
 from os import path
 
@@ -21,3 +22,8 @@ except NameError:
     __version__ = 'unknown (running code interactively?)'
 except IOError as ex:
     __version__ = "unknown (%s)" % ex
+
+# import top-level functionality
+from .tgrep import tgrep_tokenize, tgrep_compile, treepositions_no_leaves, \
+    tgrep_positions, tgrep_nodes
+
