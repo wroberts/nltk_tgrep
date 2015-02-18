@@ -24,7 +24,7 @@ http://tedlab.mit.edu/~dr/Tgrep2/
 Requirements:
 -------------
 
-- Python 2.6 or better (should work with Python 3)
+- Python 2.6 or better, or Python 3.3 or better
 - future_ (for Python 2)
 - NLTK, version 3.0.0 or better
 - pyparsing
