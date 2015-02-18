@@ -24,7 +24,7 @@ with open(path.join(HERE, 'README.rst'), encoding='utf-8') as f:
 
 # http://stackoverflow.com/a/19719657/1062499
 INSTALL_REQUIRES = ['nltk >= 3.0.0', 'pyparsing']
-if sys.version_info.major < 3:
+if sys.version_info[0] == 2:
     INSTALL_REQUIRES.append('future >= 0.14')
 
 setup(
