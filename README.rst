@@ -25,8 +25,7 @@ Requirements:
 -------------
 
 - Python 2.6 or better
-- NLTK, version 2.0.4 recommended (``ParentedTree`` is broken in 2.0.2,
-  and has a different interface in NLTK versions prior to 2.0)
+- NLTK, version 3.0.0 or better
 - pyparsing
 
 ::
