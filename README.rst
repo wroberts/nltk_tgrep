@@ -30,7 +30,7 @@ Requirements:
 
 ::
 
-    $ sudo pip install nltk pyparsing
+    $ sudo pip install nltk_tgrep
 
 Usage:
 ------
