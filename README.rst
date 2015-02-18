@@ -24,13 +24,16 @@ http://tedlab.mit.edu/~dr/Tgrep2/
 Requirements:
 -------------
 
-- Python 2.6 or better
+- Python 2.6 or better (should work with Python 3)
+- future_ (for Python 2)
 - NLTK, version 3.0.0 or better
 - pyparsing
 
 ::
 
     $ sudo pip install nltk_tgrep
+
+.. _future:     http://python-future.org
 
 Usage:
 ------
