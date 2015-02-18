@@ -1,4 +1,6 @@
 *.pyc
 *~
 /.ropeproject/
+/build/
+/dist/
 /nltk_tgrep.egg-info/
