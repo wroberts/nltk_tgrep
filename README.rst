@@ -4,9 +4,6 @@
 
 TGrep search implementation for NTLK trees.
 
-.. image:: https://travis-ci.org/wroberts/nltk_tgrep.svg?branch=master
-    :target: https://travis-ci.org/wroberts/nltk_tgrep
-
 Copyright (c) 16 March, 2013 Will Roberts <wildwilhelm@gmail.com>.
 
 Licensed under the MIT License (see source file tgrep.py for details).
@@ -23,6 +20,9 @@ http://tedlab.mit.edu/~dr/Tgrep2/tgrep2.pdf
 
 Tgrep2 source:
 http://tedlab.mit.edu/~dr/Tgrep2/
+
+.. image:: https://travis-ci.org/wroberts/nltk_tgrep.svg?branch=master
+    :target: https://travis-ci.org/wroberts/nltk_tgrep
 
 Requirements:
 -------------
