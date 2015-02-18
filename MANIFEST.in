@@ -1,2 +1,2 @@
 include README.rst
-include ntlk_tgrep/VERSION
+include nltk_tgrep/VERSION
