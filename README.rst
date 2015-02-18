@@ -38,15 +38,15 @@ Usage:
 ::
 
     >>> from nltk.tree import ParentedTree
-    >>> import tgrep
+    >>> import nltk_tgrep
     >>> tree = ParentedTree.fromstring('(S (NP (DT the) (JJ big) (NN dog)) (VP bit) (NP (DT a) (NN cat)))')
-    >>> tgrep.tgrep_nodes(tree, 'NN')
+    >>> nltk_tgrep.tgrep_nodes(tree, 'NN')
     [ParentedTree('NN', ['dog']), ParentedTree('NN', ['cat'])]
-    >>> tgrep.tgrep_positions(tree, 'NN')
+    >>> nltk_tgrep.tgrep_positions(tree, 'NN')
     [(0, 2), (2, 1)]
-    >>> tgrep.tgrep_nodes(tree, 'DT')
+    >>> nltk_tgrep.tgrep_nodes(tree, 'DT')
     [ParentedTree('DT', ['the']), ParentedTree('DT', ['a'])]
-    >>> tgrep.tgrep_nodes(tree, 'DT $ JJ')
+    >>> nltk_tgrep.tgrep_nodes(tree, 'DT $ JJ')
     [ParentedTree('DT', ['the'])]
 
 This implementation adds syntax to select nodes based on their NLTK
@@ -59,7 +59,7 @@ valid node selectors.  Example::
     ParentedTree('DT', ['the'])
     >>> tree[0,0].treeposition()
     (0, 0)
-    >>> tgrep.tgrep_nodes(tree, 'N(0,0)')
+    >>> nltk_tgrep.tgrep_nodes(tree, 'N(0,0)')
     [ParentedTree('DT', ['the'])]
 
 Caveats:
