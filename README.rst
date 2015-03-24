@@ -23,6 +23,11 @@ http://tedlab.mit.edu/~dr/Tgrep2/
 
 .. image:: https://travis-ci.org/wroberts/nltk_tgrep.svg?branch=master
     :target: https://travis-ci.org/wroberts/nltk_tgrep
+    :alt: Travis CI build status
+
+.. image:: https://pypip.in/version/nltk_tgrep/badge.png
+    :target: https://pypi.python.org/pypi/nltk_tgrep/
+    :alt: Latest Version
 
 Requirements:
 -------------
