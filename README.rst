@@ -25,6 +25,10 @@ http://tedlab.mit.edu/~dr/Tgrep2/
     :target: https://travis-ci.org/wroberts/nltk_tgrep
     :alt: Travis CI build status
 
+.. image:: https://coveralls.io/repos/wroberts/nltk_tgrep/badge.svg?branch=master
+  :target: https://coveralls.io/r/wroberts/nltk_tgrep?branch=master
+     :alt: Test code coverage
+
 .. image:: https://pypip.in/version/nltk_tgrep/badge.png
     :target: https://pypi.python.org/pypi/nltk_tgrep/
     :alt: Latest Version
