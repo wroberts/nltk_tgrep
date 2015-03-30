@@ -86,8 +86,6 @@ Caveats:
 - Labeled nodes are not implemented.
 - The "=" and "~" links are not implemented.
 - Segmented patterns using ":" are not implemented.
-- Multiple patterns using ";" are not implemented.
-- Macros are not implemented.
 
 Known Issues:
 -------------
