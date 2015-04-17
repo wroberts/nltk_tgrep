@@ -83,9 +83,7 @@ Caveats:
 - Link modifiers: "?" and "=" are not implemented.
 - Tgrep compatibility: Using "@" for "!", "{" for "<", "}" for ">" are
   not implemented.
-- Labeled nodes are not implemented.
 - The "=" and "~" links are not implemented.
-- Segmented patterns using ":" are not implemented.
 
 Known Issues:
 -------------
