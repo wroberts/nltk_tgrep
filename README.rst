@@ -29,7 +29,7 @@ http://tedlab.mit.edu/~dr/Tgrep2/
   :target: https://coveralls.io/r/wroberts/nltk_tgrep?branch=master
      :alt: Test code coverage
 
-.. image:: https://pypip.in/version/nltk_tgrep/badge.png
+.. image:: https://img.shields.io/pypi/v/nltk_tgrep.svg
     :target: https://pypi.python.org/pypi/nltk_tgrep/
     :alt: Latest Version
 
