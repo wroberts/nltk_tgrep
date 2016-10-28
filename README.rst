@@ -14,9 +14,9 @@ This module supports TGrep2 syntax for matching parts of NLTK_ Trees.
 Note that many tgrep operators implemented here require the tree
 passed to be a ``ParentedTree``.
 
-**NOTE: nltk_tgrep has been integrated into the NLTK_ project, and
+**NOTE**: nltk_tgrep has been integrated into the NLTK_ project, and
 can now be found here at `its new home`_.  This github repository
-will remain here, but will not be updated in future.**
+will remain here, but will not be updated in future.
 
 .. _its new home: https://github.com/nltk/nltk/blob/develop/nltk/tgrep.py
 
