@@ -15,8 +15,10 @@ Note that many tgrep operators implemented here require the tree
 passed to be a ``ParentedTree``.
 
    **NOTE: nltk_tgrep has been integrated into the NLTK_ project, and
-   can now be found at `nltk/nltk/tgrep.py <https://github.com/nltk/nltk/blob/develop/nltk/tgrep.py>`_.  This github repository
+   can now be found at `nltk/nltk/tgrep.py`_.  This github repository
    will remain here, but will not be updated in future.**
+
+.. _nltk/nltk/tgrep.py: https://github.com/nltk/nltk/blob/develop/nltk/tgrep.py
 
 Tgrep tutorial:
 http://www.stanford.edu/dept/linguistics/corpora/cas-tut-tgrep.html
