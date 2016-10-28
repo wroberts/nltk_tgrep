@@ -2,15 +2,21 @@
  tgrep2 Searching for NLTK Trees
 =================================
 
-TGrep search implementation for NTLK trees.
+TGrep search implementation for NLTK_ trees.
+
+.. _NLTK:     http://www.nltk.org
 
 Copyright (c) 16 March, 2013 Will Roberts <wildwilhelm@gmail.com>.
 
 Licensed under the MIT License (see source file tgrep.py for details).
 
-This module supports TGrep2 syntax for matching parts of NLTK Trees.
+This module supports TGrep2 syntax for matching parts of NLTK_ Trees.
 Note that many tgrep operators implemented here require the tree
 passed to be a ``ParentedTree``.
+
+   **NOTE: nltk_tgrep has been integrated into the NLTK_ project, and
+   can now be found at `nltk/nltk/tgrep.py <https://github.com/nltk/nltk/blob/develop/nltk/tgrep.py>`_.  This github repository
+   will remain here, but will not be updated in future.**
 
 Tgrep tutorial:
 http://www.stanford.edu/dept/linguistics/corpora/cas-tut-tgrep.html
@@ -38,7 +44,7 @@ Requirements:
 
 - Python 2.6 or better, or Python 3.2 or better
 - future_ (for Python 2)
-- NLTK, version 3.0.0 or better
+- NLTK_, version 3.0.0 or better
 - pyparsing
 
 ::
@@ -64,7 +70,7 @@ Usage:
     >>> nltk_tgrep.tgrep_nodes(tree, 'DT $ JJ')
     [ParentedTree('DT', ['the'])]
 
-This implementation adds syntax to select nodes based on their NLTK
+This implementation adds syntax to select nodes based on their NLTK_
 tree position.  This syntax is ``N`` plus a Python tuple representing
 the tree position.  For instance, ``N()``, ``N(0,)``, ``N(0,0)`` are
 valid node selectors.  Example::
@@ -89,7 +95,7 @@ Known Issues:
 -------------
 
 - There are some issues with link relations involving leaf nodes
-  (which are represented as bare strings in NLTK trees).  For
+  (which are represented as bare strings in NLTK_ trees).  For
   instance, consider the tree::
 
       (S (A x))
